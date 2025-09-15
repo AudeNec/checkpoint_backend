@@ -1,7 +1,7 @@
-# Awesome Project Build with TypeORM
+# My backend checkpoint
 
-Steps to run this project:
+`npm i` to init
 
-1. Run `npm i` command
-2. Setup database settings inside `data-source.ts` file
-3. Run `npm start` command
+`npm run start` create the database and seed the continent table on first launch
+
+Have fun!
