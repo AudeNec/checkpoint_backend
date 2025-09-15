@@ -14,6 +14,7 @@
   },
   "scripts": {
     "start": "ts-node src/index.ts",
-    "typeorm": "typeorm-ts-node-commonjs"
+    "typeorm": "typeorm-ts-node-commonjs",
+    "db:seed": "ts-node src/seeder/Seeders.ts"
   }
 }

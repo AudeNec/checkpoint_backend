@@ -5,8 +5,9 @@ const dataSource = new DataSource({
   type: "sqlite",
   database: "checkpoint.sqlite",
   entities: [Country],
-  synchronize: true,
+  // synchronize: true,
   logging: ["error", "query"],
+  migrations: ["src/migration/**/*.ts"],
 });
 
 export default dataSource;
