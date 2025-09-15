@@ -28,6 +28,13 @@ export default class CountryResolver {
     return await Country.findOneBy({ code });
   }
 
+  @Query(() => [Country])
+  async getCountriesByContinentCode(
+    @Arg("continentCode") continentCode: string
+  ) {
+    return await Country.findBy({ continentCode });
+  }
+
   @Mutation(() => Country)
   async createCountry(@Arg("data", () => CountryInput) data: CountryInput) {
     const country = Country.create(data);
