@@ -1,13 +1,13 @@
 import { DataSource } from "typeorm";
 import { Country } from "../entity/Country";
+import { Continent } from "../entity/Continent";
 
 const dataSource = new DataSource({
   type: "sqlite",
   database: "checkpoint.sqlite",
-  entities: [Country],
-  // synchronize: true,
+  entities: [Country, Continent],
+  synchronize: true,
   logging: ["error", "query"],
-  migrations: ["src/migration/**/*.ts"],
 });
 
 export default dataSource;

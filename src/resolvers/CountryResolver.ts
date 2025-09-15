@@ -11,6 +11,9 @@ class CountryInput extends Country {
 
   @Field()
   emoji!: string;
+
+  @Field()
+  continentCode!: string;
 }
 
 @Resolver(Country)
