@@ -10,8 +10,9 @@ const continent = [
 ];
 
 const countries = [
-  { name: "France", code: "FR", emoji: "🇫🇷" },
-  { name: "Belgium", code: "BE", emoji: "🇧🇪" },
+  { name: "France", code: "FR", emoji: "🇫🇷", continentCode: "EU" },
+  { name: "Belgium", code: "BE", emoji: "🇧🇪", continentCode: "EU" },
+  { name: "Japan", code: "JP", emoji: "🇯🇵", continentCode: "AS" },
 ];
 
 export const seedContinents = async () => {

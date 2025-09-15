@@ -33,6 +33,6 @@ export class Country extends BaseEntity {
   continentCode: string;
 
   @ManyToOne(() => Continent, (continent) => continent.countries)
-  @JoinColumn({ name: "continentCode", referencedColumnName: "code" })
+  @JoinColumn({ name: "continentCode" })
   continent: Continent;
 }
